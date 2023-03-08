@@ -174,7 +174,8 @@
         });
         bounds_group.addLayer(layer_FiberRoutesDemo_3);
         map.addLayer(layer_FiberRoutesDemo_3);
-        var osmGeocoder = new L.Control.Geocoder({
+        var googleGeocoder = new L.Control.Geocoder({
+            geocoder: L.Control.Geocoder.google,
             collapsed: true,
             position: 'topleft',
             text: 'Search',
